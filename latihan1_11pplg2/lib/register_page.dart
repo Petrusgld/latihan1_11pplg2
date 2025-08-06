@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'custom_input_widgets.dart';
+import 'components/custom_input_widgets.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -45,6 +45,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 controller: txtName,
                 label: 'Name',
                 hint: 'Enter your name',
+                isNumber: false,
               ),
             ),
 
@@ -54,6 +55,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 controller: txtUsername,
                 label: 'Username',
                 hint: 'Enter your username',
+                isNumber: false,
               ),
             ),
 
@@ -64,6 +66,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 label: 'Password',
                 hint: 'Enter your password',
                 isPassword: true,
+                isNumber: false,
               ),
             ),
 

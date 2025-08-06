@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'custom_input_widgets.dart';
+import 'components/custom_input_widgets.dart';
 import 'register_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -23,19 +23,9 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              "Welcome Back",
-              style: TextStyle(
-                fontSize: 23,
-                color: Colors.blue,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            CustomText(text: "Welcome Back!", size: 23, color: Colors.blue, weight: FontWeight.bold),
 
-            Text(
-              "Welcome Back! Please enter your details",
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
-            ),
+            CustomText(text: "Please Enter Your Details", size: 13, color: Colors.black, weight: FontWeight.w300),
 
             //image dari resource
             Center(
@@ -53,6 +43,7 @@ class _LoginPageState extends State<LoginPage> {
               controller: txtUsername,
               label: 'Username',
               hint: 'Enter your username',
+              isNumber: false,
             ),
 
             Container(
@@ -62,6 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                 label: 'Password',
                 hint: 'Enter your password',
                 isPassword: true,
+                isNumber: false,
               ),
             ),
 
