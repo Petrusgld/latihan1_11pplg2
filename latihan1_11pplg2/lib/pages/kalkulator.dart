@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_instance/src/extension_instance.dart';
-import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
+import 'package:get/get.dart';
 import 'package:latihan1_11pplg2/components/custom_input_widgets.dart';
 import 'package:latihan1_11pplg2/controllers/calculator_controller.dart';
+import 'package:latihan1_11pplg2/routes/routes.dart';
 
 class CalculatorPage extends StatelessWidget {
   CalculatorPage({super.key});
@@ -104,6 +103,7 @@ class CalculatorPage extends StatelessWidget {
                 ),
               ],
             ),
+            
             SizedBox(height: 30),
             Center(
               child: Obx(() {
@@ -125,6 +125,21 @@ class CalculatorPage extends StatelessWidget {
                 text: "Clear",
                 onPressed: () {
                   controller.clear();
+                },
+                labelColor: TextStyle(
+                    color: Colors.black
+                  ),
+                style: ButtonStyle(),
+              ),
+            ),
+
+            Container(
+              margin: EdgeInsets.only(top: 7),
+              width: double.infinity,
+              child: CustomButton(
+                text: "Football Pages",
+                onPressed: () {
+                   Get.toNamed(AppRoutes.footballPlayer);
                 },
                 labelColor: TextStyle(
                     color: Colors.black

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'components/custom_input_widgets.dart';
+import '../components/custom_input_widgets.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
