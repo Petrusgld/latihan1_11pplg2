@@ -133,20 +133,6 @@ class CalculatorPage extends StatelessWidget {
               ),
             ),
 
-            Container(
-              margin: EdgeInsets.only(top: 7),
-              width: double.infinity,
-              child: CustomButton(
-                text: "Football Pages",
-                onPressed: () {
-                   Get.toNamed(AppRoutes.footballPlayer);
-                },
-                labelColor: TextStyle(
-                    color: Colors.black
-                  ),
-                style: ButtonStyle(),
-              ),
-            ),
           ],
         ),
       ),

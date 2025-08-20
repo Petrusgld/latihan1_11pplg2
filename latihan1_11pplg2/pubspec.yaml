@@ -68,6 +68,7 @@ flutter:
     - assets/images/Amad.webp
     - assets/images/sesko.jpeg
     - assets/images/cunha.jpeg
+    - assets/images/profile.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
